@@ -6,26 +6,114 @@
 .header;;
  */
 .header {
-  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  line-height: 100px;
+  z-index: 999;
 }
-.header nav {
+
+.header h1 img {
+  height: 67px;
+}
+.header .gnb {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .gnb ul {
   display: flex;
 }
-.header nav > ul {
-  display: flex;
+.header .burger i {
+  vertical-align: middle;
+  font-size: 40px;
+  color: white;
 }
 /* 
 .header;;
  */
 
 /* 
-.main_visual;;
+.mainVisual;;
  */
-.main_visual {
-  background: #ddd;
+.mainBg {
+  height: 100vh;
 }
+.quarry {
+  background: url(../img/quarry.jpg) no-repeat top center/cover;
+}
+.tiny {
+  background: url(../img/2KGMKT_TTW_STD_D2C_Hero_Banner_3840x2160.jpg) no-repeat bottom center / cover;
+}
+.midnight {
+  background: url(../img/midnight_main.jpg) no-repeat top center/cover;
+}
+.wwe {
+  background: url(../img/wwe-thumb-1920-1216705.png) no-repeat top center/cover;
+}
+.quarry .info {
+  opacity: 0;
+  visibility: hidden;
+}
+.quarry .info iframe {
+  width: 100px;
+  height: 100px;
+}
+.quarry .info.on {
+  opacity: 1;
+  visibility: visible;
+}
+.quarry .info.on iframe {
+  width: 500px;
+  height: 500px;
+  transition: 1s;
+}
+.titleSlider {
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  width: 100%;
+}
+.titleSlider img {
+  width: 400px;
+  cursor: pointer;
+  filter: grayscale(1);
+  transition: 0.3s;
+  margin: 0 auto;
+}
+.titleSlider .midnightTitle img {
+  width: 300px;
+}
+.titleSlider .slick-current img {
+  animation: beat 3s ease-in-out infinite;
+}
+.titleSlider .slick-current img:hover {
+  animation: none;
+}
+@keyframes beat {
+  0% {
+    opacity: 0.7;
+    transform: scale(0.93);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 0.7;
+    transform: scale(0.93);
+  }
+}
+
+.titleSlider img:hover {
+  filter: grayscale(0);
+}
+.titleSlider .slick-current img {
+  filter: grayscale(0);
+}
+
 /* 
-.main_visual;;
+.mainVisual;;
  */
 
 /* 
