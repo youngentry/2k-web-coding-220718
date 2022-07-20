@@ -96,9 +96,10 @@
 }
 .titleSlider .slick-arrow {
   position: absolute;
-  top: 0;
+  top: -392px;
   width: 201px;
-  height: 300px;
+  height: calc(100vh - 100px);
+  border: none;
   opacity: 0;
 }
 .titleSlider .slick-prev {
@@ -151,8 +152,7 @@
   transition: 0.2s;
 }
 .description .closeBtn i:hover {
-  color: #000;
-  background: rgba(255, 255, 255, 0.8);
+  transform: rotate(100deg) scale(1.4);
 }
 .description .txt {
   padding: 30px;
