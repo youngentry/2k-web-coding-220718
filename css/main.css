@@ -37,6 +37,7 @@
 .mainVisual;;
  */
 .mainBg {
+  position: relative;
   height: 100vh;
 }
 .quarry {
@@ -50,23 +51,6 @@
 }
 .wwe {
   background: url(../img/wwe-thumb-1920-1216705.png) no-repeat top center/cover;
-}
-.quarry .info {
-  opacity: 0;
-  visibility: hidden;
-}
-.quarry .info iframe {
-  width: 100px;
-  height: 100px;
-}
-.quarry .info.on {
-  opacity: 1;
-  visibility: visible;
-}
-.quarry .info.on iframe {
-  width: 500px;
-  height: 500px;
-  transition: 1s;
 }
 .titleSlider {
   position: absolute;
@@ -110,6 +94,90 @@
 }
 .titleSlider .slick-current img {
   filter: grayscale(0);
+}
+.description .infoWrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+.description .infoWrap.on {
+  display: block;
+}
+.description .info {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46.34%;
+  background: #1a1a1a;
+  color: #fff;
+  border-radius: 10px;
+}
+.description .closeBtn {
+  position: absolute;
+  top: -30px;
+  right: -70px;
+}
+.description .closeBtn i {
+  font-size: 40px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.description .closeBtn i:hover {
+  color: #000;
+  background: rgba(255, 255, 255, 0.8);
+}
+.description .txt {
+  padding: 30px;
+}
+.description strong {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+.description iframe {
+  width: 100%;
+  height: 500px;
+}
+.description img {
+  position: absolute;
+  top: -10px;
+  margin-left: 20px;
+  height: 50px;
+}
+.description p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #ddd;
+  line-height: 1.25;
+  margin-bottom: 25px;
+}
+.description .btn a {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 7px 40px 9px 40px;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  margin-right: 5px;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+.description .btn a:hover {
+  color: #000;
+  background: #fff;
 }
 
 /* 

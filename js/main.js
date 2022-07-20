@@ -9,13 +9,16 @@ $(function () {
     arrows: false,
     slidesToShow: 1,
     centerMode: true,
-    centerPadding: "480px",
+    centerPadding: "25%",
     focusOnSelect: true,
     swipeToSlide: true,
     cssEase: "ease-in-out",
   });
 
-  $(".title.slick-current").on("click", function () {
-    $(".slider .info").toggleClass("on");
+  $(".title.slick-current.quarryTitle").on("click", function () {
+    $(".quarryWrap").addClass("on");
+  });
+  $(".description .closeBtn").on("click", function () {
+    $(".quarryWrap").removeClass("on");
   });
 });
