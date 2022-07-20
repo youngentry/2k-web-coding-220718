@@ -1,7 +1,6 @@
 .container {
   width: 1200px;
 }
-
 /* 
 .header;;
  */
@@ -95,7 +94,33 @@
 .titleSlider .slick-current img {
   filter: grayscale(0);
 }
-.description .infoWrap {
+.titleSlider .quarryTitle,
+.titleSlider .tinyTitle,
+.titleSlider .midnightTitle,
+.titleSlider .wweTitle {
+  position: relative;
+}
+.titleSlider .quarryCover,
+.titleSlider .tinyCover,
+.titleSlider .midnightCover,
+.titleSlider .wweCover {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 0, 0, 0.216);
+  z-index: 9999;
+}
+.titleSlider .quarryCover.on,
+.titleSlider .tinyCover.on,
+.titleSlider .midnightCover.on,
+.titleSlider .wweCover.on {
+  display: none;
+}
+
+.infoWrap {
   display: none;
   position: absolute;
   top: 0;
@@ -105,10 +130,11 @@
   background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
-.description .infoWrap.on {
+.infoWrap.on {
   display: block;
 }
 .description .info {
+  display: none;
   position: absolute;
   top: 10%;
   left: 50%;
@@ -117,6 +143,10 @@
   background: #1a1a1a;
   color: #fff;
   border-radius: 10px;
+  z-index: 1001;
+}
+.description .info.on {
+  display: block;
 }
 .description .closeBtn {
   position: absolute;
