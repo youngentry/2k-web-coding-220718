@@ -6,12 +6,12 @@ $(function () {
   });
   $(".titleSlider").slick({
     asNavFor: ".slider",
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     centerMode: true,
     centerPadding: "25%",
     focusOnSelect: true,
-    swipeToSlide: true,
+    swipe: false,
     cssEase: "ease-in-out",
   });
 
@@ -51,36 +51,29 @@ $(function () {
   // });
   var num = 0;
 
-  $(".mainSlider").on("afterChange", function (e, s, c) {
+  $(".slider").on("afterChange", function (e, s, c) {
     num = c;
   });
-
   $(".infoWrap").on("click", function () {
     $(".infoWrap").removeClass("on");
     $(".description .info").removeClass("on");
+    if (!$(".infoWrap").hasClass("on")) {
+      for (i = 0; i < 4; i++) {
+        $("iframe")[i].contentWindow.postMessage('{"event":"command","func":"' + "stopVideo" + '","args":""}', "*");
+      }
+    }
   });
-
   $(".description .closeBtn").on("click", function () {
     $(".infoWrap").removeClass("on");
     $(".description .info").removeClass("on");
+    if (!$(".infoWrap").hasClass("on")) {
+      for (i = 0; i < 4; i++) {
+        $("iframe")[i].contentWindow.postMessage('{"event":"command","func":"' + "stopVideo" + '","args":""}', "*");
+      }
+    }
   });
-
-  $(".quarryCover").on("click", function () {
-    $(this).addClass("on");
-  });
-  $(".tinyCover").on("click", function () {
-    $(this).addClass("on");
-  });
-  $(".midnightCover").on("click", function () {
-    $(this).addClass("on");
-  });
-  $(".wweCover").on("click", function () {
-    $(this).addClass("on");
-  });
-
   $(".title img").on("click", function () {
     $(".infoWrap").addClass("on");
     $(".info").eq(num).addClass("on");
-    console.log($(".titleSlider figure").eq(num));
   });
 });

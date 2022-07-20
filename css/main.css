@@ -94,30 +94,19 @@
 .titleSlider .slick-current img {
   filter: grayscale(0);
 }
-.titleSlider .quarryTitle,
-.titleSlider .tinyTitle,
-.titleSlider .midnightTitle,
-.titleSlider .wweTitle {
-  position: relative;
-}
-.titleSlider .quarryCover,
-.titleSlider .tinyCover,
-.titleSlider .midnightCover,
-.titleSlider .wweCover {
+.titleSlider .slick-arrow {
   position: absolute;
-  display: block;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 400px;
-  height: 400px;
-  background: rgba(255, 0, 0, 0.216);
-  z-index: 9999;
+  top: 0;
+  width: 201px;
+  height: 300px;
+  opacity: 0;
 }
-.titleSlider .quarryCover.on,
-.titleSlider .tinyCover.on,
-.titleSlider .midnightCover.on,
-.titleSlider .wweCover.on {
-  display: none;
+.titleSlider .slick-prev {
+  left: 0px;
+  z-index: 999;
+}
+.titleSlider .slick-next {
+  right: 0px;
 }
 
 .infoWrap {
