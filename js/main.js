@@ -38,4 +38,12 @@ $(function () {
     $(".info").eq(num).addClass("on");
   });
   // .mainVisual;;
+
+  // .category;;
+  $(".category .tab div").on("click", function () {
+    var idx = $(this).index();
+    $(this).addClass("on").siblings().removeClass("on");
+    $(".genre").eq(idx).addClass("on").siblings().removeClass("on");
+  });
+  // .category;;
 });
