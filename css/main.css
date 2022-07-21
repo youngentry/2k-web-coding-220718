@@ -35,6 +35,7 @@
 /* 
 .mainVisual;;
  */
+
 .mainBg {
   position: relative;
   height: 100vh;
@@ -53,23 +54,33 @@
 }
 .titleSlider {
   position: absolute;
-  top: 55%;
+  top: 60%;
   left: 0%;
   width: 100%;
+}
+.titleSlider figure {
+  position: relative;
+  height: 300px;
+}
+.titleSlider figure::after {
+  content: "";
+  position: absolute;
+  top: 27%;
+  left: -15%;
+  height: 1px;
+  width: 30%;
+  background: rgba(221, 221, 221, 0.25);
+  z-index: 9999;
 }
 .titleSlider img {
   width: 400px;
   cursor: pointer;
   filter: grayscale(1);
   transition: 0.3s;
-  margin: 0 auto;
-  margin-top: 50px;
+  margin: auto;
 }
-.titleSlider .quarryTitle img {
-  margin-top: 25px;
-}
+
 .titleSlider .midnightTitle img {
-  margin-top: 0;
   width: 350px;
 }
 .titleSlider .slick-current img {
@@ -101,18 +112,27 @@
 }
 .titleSlider .slick-arrow {
   position: absolute;
-  top: -392px;
-  width: 201px;
-  height: calc(100vh - 100px);
+  top: -187.5%;
+  width: 300px;
+  height: calc(100vh);
+  font-size: 0;
   border: none;
   opacity: 0;
 }
 .titleSlider .slick-prev {
   left: 0px;
-  z-index: 999;
+  z-index: 997;
 }
 .titleSlider .slick-next {
   right: 0px;
+}
+.titleSlider .slick-prev:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+  opacity: 1;
+}
+.titleSlider .slick-next:hover {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+  opacity: 1;
 }
 
 .infoWrap {
@@ -316,3 +336,287 @@
 /* 
 .c05;;
  */
+
+@media (max-width: 768px) {
+  .container {
+    width: 1200px;
+  }
+  /* 
+  .header;;
+   */
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    line-height: 100px;
+    z-index: 999;
+  }
+
+  .header h1 img {
+    height: 67px;
+  }
+  .header .gnb {
+    margin: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header .gnb ul {
+    display: flex;
+  }
+  .header .burger i {
+    vertical-align: middle;
+    font-size: 40px;
+    color: white;
+  }
+  /* 
+  .header;;
+   */
+
+  /* 
+  .mainVisual;;
+   */
+  .mainBg {
+    position: relative;
+    height: 100vh;
+  }
+  .quarry {
+    background: url(../img/quarry.jpg) no-repeat top center/cover;
+  }
+  .tiny {
+    background: url(../img/2KGMKT_TTW_STD_D2C_Hero_Banner_3840x2160.jpg) no-repeat bottom center / cover;
+  }
+  .midnight {
+    background: url(../img/midnight_main.jpg) no-repeat top center/cover;
+  }
+  .wwe {
+    background: url(../img/wwe-thumb-1920-1216705.png) no-repeat top center/cover;
+  }
+  /* 수정1 */
+  .titleSlider {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 100%;
+  }
+  .titleSlider img {
+    width: 270px;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: 0.3s;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .titleSlider .quarryTitle img {
+    margin-top: 40px;
+  }
+  .titleSlider .midnightTitle img {
+    margin-top: 25px;
+    width: 200px;
+  }
+  /* 수정1 */
+  .titleSlider .slick-current img {
+    animation: beat 3s ease-in-out infinite;
+  }
+  .titleSlider .slick-current img:hover {
+    animation: none;
+  }
+  @keyframes beat {
+    0% {
+      opacity: 0.7;
+      transform: scale(0.93);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(0.97);
+    }
+    100% {
+      opacity: 0.7;
+      transform: scale(0.93);
+    }
+  }
+
+  /* .titleSlider img:hover { slick-arrow에 가려서 hover가 작동하지 못함.
+    filter: grayscale(0);
+  } */
+  .titleSlider .slick-current img {
+    filter: grayscale(0);
+  }
+  .titleSlider .slick-arrow {
+    position: absolute;
+    top: -392px;
+    width: 201px;
+    height: calc(100vh - 120px);
+    border: none;
+    opacity: 0;
+  }
+  .titleSlider .slick-prev {
+    left: 0px;
+    z-index: 999;
+  }
+  .titleSlider .slick-next {
+    right: 0px;
+  }
+
+  .infoWrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  .infoWrap.on {
+    display: block;
+  }
+  /* 수정2 width */
+  .description .info {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80.34%;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 1001;
+  }
+  /* 수정2 width */
+
+  .description .info.on {
+    display: block;
+  }
+
+  /* 수정4 closeBtn 위치와 크기 */
+  .description .closeBtn {
+    position: absolute;
+    top: -30px;
+    right: -60px;
+  }
+  .description .closeBtn i {
+    font-size: 30px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  .description .closeBtn i:hover {
+    transform: rotate(10deg) scale(1.2);
+  }
+  /* 수정4 closeBtn 위치와 크기 */
+
+  .description .summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  /* 수정3 font-size, padding 간격 */
+  .description strong {
+    display: block;
+    font-size: 23px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    letter-spacing: -0.025em;
+  }
+  .description iframe {
+    width: 100%;
+    height: 500px;
+  }
+  .description .sTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .description img {
+    align-items: center;
+    right: 0px;
+    height: 70px;
+  }
+  .description .midnightInfo img {
+    height: 150px;
+  }
+  .description p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ddd;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    letter-spacing: -0.025em;
+  }
+  .description .btn a {
+    position: relative;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 7px 20px 9px 20px;
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    margin-right: 5px;
+    transition: 0.2s;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  /* 수정3 font-size */
+
+  .description .btn a:hover {
+    color: #000;
+    background: #fff;
+  }
+  .description .btn a::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 35%;
+    height: 200%;
+    background: #fff;
+    transform: rotate(10deg);
+    animation: whiteGlowBefore 15s infinite;
+    z-index: 999;
+  }
+  .description .btn a::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    width: 15%;
+    height: 200%;
+    background: #fff;
+    transform: rotate(15deg);
+    animation: whiteGlowAfter 15s infinite;
+  }
+  @keyframes whiteGlowBefore {
+    0% {
+      left: -700%;
+    }
+    48% {
+      left: -700%;
+    }
+    60% {
+      left: 300%;
+    }
+    100% {
+      left: 300%;
+    }
+  }
+  @keyframes whiteGlowAfter {
+    0% {
+      left: -350%;
+    }
+    48% {
+      left: -350%;
+    }
+    60% {
+      left: 300%;
+    }
+    100% {
+      left: 300%;
+    }
+  }
+  /* 
+  .mainVisual;;
+   */
+}
