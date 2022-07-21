@@ -334,10 +334,10 @@ body {
 .category .tab .strategy {
   background: url(../img/paint01.png) no-repeat center center/cover;
 }
-.shooterGames {
+.genre {
   display: none;
 }
-.shooterGames.on {
+.genre.on {
   display: block;
 }
 
@@ -345,23 +345,23 @@ body {
   display: flex;
   gap: 30px;
 }
-.shooterGames div > ul li {
+.genre div > ul li {
   flex: 1;
 }
 
-.shooterGames .left {
+.genre .left {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.shooterGames .center {
+.genre .center {
   margin-top: 140px;
   display: flex;
   flex-direction: column;
   gap: 60px;
 }
-.shooterGames .right {
+.genre .right {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
@@ -378,10 +378,10 @@ body {
   transform: scale(1.1);
   filter: brightness(1);
 }
-.shooterGames li {
+.genre li {
   position: relative;
 }
-.shooterGames p {
+.genre p {
   font-family: "Oswald", sans-serif;
   position: absolute;
   bottom: 8%;
@@ -391,7 +391,7 @@ body {
   color: #fff;
   z-index: 999;
 }
-.shooterGames li::after {
+.genre li::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -400,7 +400,7 @@ body {
   background: rgba(0, 0, 0, 0.5);
   transition: 0.2s;
 }
-.shooterGames ul li:hover::after {
+.genre ul li:hover::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -408,6 +408,7 @@ body {
   height: 23%;
   background: rgba(0, 0, 0, 0.5);
   transition: 0.5s;
+  cursor: pointer;
 }
 /* 
 .category;;
