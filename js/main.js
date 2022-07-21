@@ -39,6 +39,13 @@ $(function () {
   });
   // .mainVisual;;
 
+  // .promotion;;
+  $(".promotionSlider").slick({
+    arrows: true,
+    slidesToShow: 4,
+  });
+  // .promotion;;
+
   // .category;;
   $(".category .tab div").on("click", function () {
     var idx = $(this).index();

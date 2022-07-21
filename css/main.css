@@ -1,5 +1,6 @@
 body {
   background: #1a1a1a;
+  color: #fff;
 }
 .container {
   width: 1200px;
@@ -291,6 +292,41 @@ body {
  */
 
 /* 
+.promotion;;
+ */
+.promotion {
+  display: flex;
+  justify-content: center;
+}
+.promotion .container {
+  width: 1230px;
+}
+.promotion .head {
+  margin-left: 15px;
+}
+.promotion h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  color: red;
+}
+.promotion .head > p {
+  font-size: 17px;
+  color: blue;
+}
+.promotion .content figure {
+  padding: 0 15px;
+}
+.promotion .txt {
+  margin-left: 15px;
+}
+.promotion .price {
+  display: flex;
+}
+/* 
+.promotion;;
+ */
+
+/* 
 .category;;
  */
 .category {
@@ -412,16 +448,6 @@ body {
 }
 /* 
 .category;;
- */
-
-/* 
-.c02;;
- */
-.c02 {
-  background: #ddd;
-}
-/* 
-.c02;;
  */
 
 /* 
