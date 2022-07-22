@@ -42,7 +42,7 @@ body {
 .mainBg {
   position: relative;
   height: 100vh;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .quarry {
   background: url(../img/quarry.jpg) no-repeat top center/cover;
@@ -323,14 +323,26 @@ body {
 .promotion .sale {
   display: inline-block;
   padding: 4px 10px 6px 10px;
-  font-size: 15px;
+  font-size: 17px;
   text-transform: uppercase;
   background: #e61f27;
   border-radius: 20px;
   margin-bottom: 5px;
 }
 .promotionSlider {
-  margin-bottom: 100px;
+  margin-bottom: 150px;
+}
+.promotion .content img {
+  transition: 0.2s;
+}
+.promotion .content:hover img {
+  transform: scale(1.05);
+}
+.promotion .content span {
+  font-size: 19px;
+}
+.promotion .content:hover span {
+  text-decoration: underline;
 }
 .promotion .content figure {
   padding: 15px 15px 15px 15px;
@@ -360,24 +372,24 @@ body {
   margin-right: 5px;
   padding: 1px 9px 3px 9px;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 300;
   background: #e61f27;
   border-radius: 10px;
 }
 .promotion .price p:nth-child(2) {
-  padding: 0 2px 0 3px;
+  padding: 0 4px 0 1px;
   font-size: 15px;
   font-weight: 300;
   text-decoration: line-through;
   color: rgb(163, 163, 163);
 }
 .promotion .price p:nth-child(3) {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 500;
 }
 .promotion .slick-arrow {
   position: absolute;
-  top: 33%;
+  top: 45%;
   width: 40px;
   height: 40px;
   font-size: 0;
@@ -416,6 +428,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 30px;
+  cursor: pointer;
 }
 .category .tab div {
   font-family: "Oswald", sans-serif;
@@ -424,7 +437,8 @@ body {
   padding: 15px 0px 17px 0;
   text-align: center;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
+  color: #ddd;
   filter: brightness(0.7);
   transition: 0.3s;
   text-transform: uppercase;
@@ -434,6 +448,7 @@ body {
   transition: 0.3s;
 }
 .category .tab div.on {
+  color: #fff;
   filter: brightness(1);
 }
 .category .tab .shooter {
