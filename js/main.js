@@ -43,6 +43,7 @@ $(function () {
   $(".promotionSlider").slick({
     arrows: true,
     slidesToShow: 4,
+    swipeToSlide: true,
   });
   // .promotion;;
 

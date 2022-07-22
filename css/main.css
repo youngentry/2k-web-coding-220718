@@ -1,5 +1,5 @@
 body {
-  background: #1a1a1a;
+  background: #000;
   color: #fff;
 }
 .container {
@@ -159,7 +159,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 46.34%;
-  background: #1a1a1a;
+  background: #000;
   color: #fff;
   border-radius: 10px;
   z-index: 1001;
@@ -295,6 +295,7 @@ body {
 .promotion;;
  */
 .promotion {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -305,22 +306,69 @@ body {
   margin-left: 15px;
 }
 .promotion h2 {
+  display: flex;
   font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  color: red;
+  font-size: 44px;
+  font-weight: 300;
+  color: #fff;
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
-.promotion .head > p {
-  font-size: 17px;
-  color: blue;
+.promotion h2 p {
+  margin-right: 8px;
+}
+.promotion h2 figure img {
+  vertical-align: 0%;
+}
+.promotion .sale {
+  display: inline-block;
+  padding: 4px 10px 6px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #e61f27;
+  border-radius: 20px;
+  margin-bottom: 5px;
 }
 .promotion .content figure {
-  padding: 0 15px;
+  padding: 0 15px 10px 15px;
 }
+.promotion .content figure img {
+  border-radius: 10px;
+}
+
 .promotion .txt {
+  font-size: 21px;
   margin-left: 15px;
+  text-transform: uppercase;
 }
 .promotion .price {
   display: flex;
+  font-size: 17px;
+  padding-bottom: 100px;
+}
+.promotion .slick-arrow {
+  position: absolute;
+  top: 33%;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  background: none;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  z-index: 999;
+}
+.promotion .slick-arrow:hover {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+.promotion .slick-prev {
+  left: -35px;
+  transform: translateY(-50%) rotate(-45deg);
+}
+.promotion .slick-next {
+  right: -35px;
+  transform: translateY(-50%) rotate(135deg);
 }
 /* 
 .promotion;;
@@ -334,9 +382,7 @@ body {
   justify-content: center;
   height: 100vh;
 }
-.category .container {
-  width: 1200px;
-}
+
 .category .tab {
   display: flex;
   justify-content: center;
@@ -376,34 +422,18 @@ body {
 .genre.on {
   display: block;
 }
-
 .gameList {
   display: flex;
   gap: 30px;
 }
-.genre div > ul li {
-  flex: 1;
-}
 
-.genre .left {
+.genre .gameList > li > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
 }
-.genre .center {
-  margin-top: 140px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-.genre .right {
-  margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-.category .container > ul img {
+.genre .gameList img {
   filter: brightness(0.8);
   transition: 0.3s;
 }
@@ -446,6 +476,7 @@ body {
   transition: 0.5s;
   cursor: pointer;
 }
+
 /* 
 .category;;
  */
