@@ -37,12 +37,31 @@ $(function () {
     $(".infoWrap").addClass("on");
     $(".info").eq(num).addClass("on");
   });
+
+  $(".infoSlideBtn .prev").on("click", function () {
+    $(".titleSlider").slick("slickPrev");
+    $(".description")
+      .children()
+      .eq((num - 1) % 4)
+      .addClass("on")
+      .siblings()
+      .removeClass("on");
+  });
+  $(".infoSlideBtn .next").on("click", function () {
+    $(".titleSlider").slick("slickNext");
+    $(".description")
+      .children()
+      .eq((num + 1) % 4)
+      .addClass("on")
+      .siblings()
+      .removeClass("on");
+  });
   // .mainVisual;;
 
   // .promotion;;
   $(".promotionSlider").slick({
     arrows: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     swipeToSlide: true,
   });
   // .promotion;;

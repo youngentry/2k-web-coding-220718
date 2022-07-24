@@ -1,5 +1,5 @@
 body {
-  background: #000;
+  background: #212529;
   color: #fff;
 }
 .container {
@@ -13,6 +13,8 @@ body {
   top: 0;
   width: 100%;
   line-height: 100px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+
   z-index: 999;
 }
 
@@ -159,7 +161,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 46.34%;
-  background: #000;
+  background: #212529;
   color: #fff;
   border-radius: 10px;
   z-index: 1001;
@@ -183,6 +185,37 @@ body {
 .description .closeBtn i:hover {
   transform: rotate(10deg) scale(1.4);
 }
+/* 22.07.24 description move btn */
+.infoSlideBtn {
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  cursor: pointer;
+}
+
+.infoSlideBtn .prev,
+.infoSlideBtn .next {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  z-index: 999;
+}
+.infoSlideBtn .prev {
+  left: -550px;
+  transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+}
+.infoSlideBtn .next {
+  left: 550px;
+  transform: translateY(-50%) translateX(-50%) rotate(135deg);
+}
+.infoSlideBtn .prev:hover,
+.infoSlideBtn .next:hover {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+}
+/* 22.07.24 description move btn */
 .description .summary {
   display: flex;
   justify-content: space-between;
@@ -218,7 +251,7 @@ body {
   font-weight: 300;
   color: #ddd;
   line-height: 1.25;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   letter-spacing: -0.025em;
 }
 .description .btn a {
@@ -315,11 +348,12 @@ body {
   text-transform: uppercase;
 }
 .promotion h2 p {
-  margin-right: 8px;
+  margin-right: 10px;
 }
 .promotion h2 figure img {
   vertical-align: 0%;
 }
+
 .promotion .sale {
   display: inline-block;
   padding: 4px 10px 6px 10px;
@@ -390,8 +424,8 @@ body {
 .promotion .slick-arrow {
   position: absolute;
   top: 45%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   font-size: 0;
   background: none;
   border: none;
@@ -404,11 +438,11 @@ body {
   border-left: 2px solid #fff;
 }
 .promotion .slick-prev {
-  left: -35px;
+  left: -50px;
   transform: translateY(-50%) rotate(-45deg);
 }
 .promotion .slick-next {
-  right: -35px;
+  right: -50px;
   transform: translateY(-50%) rotate(135deg);
 }
 /* 
@@ -425,6 +459,7 @@ body {
 }
 
 .category .tab {
+  top: 0;
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -439,7 +474,7 @@ body {
   font-size: 30px;
   font-weight: 300;
   color: #ddd;
-  filter: brightness(0.7);
+  filter: brightness(0.55);
   transition: 0.3s;
   text-transform: uppercase;
 }
@@ -448,6 +483,7 @@ body {
   transition: 0.3s;
 }
 .category .tab div.on {
+  position: relative;
   color: #fff;
   filter: brightness(1);
 }
