@@ -46,6 +46,41 @@ body {
   height: 100vh;
   margin-bottom: 150px;
 }
+.mainArrow .prev,
+.mainArrow .next {
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  font-size: 0;
+  opacity: 0;
+  z-index: 998;
+}
+.mainArrow .prev {
+  left: 0px;
+}
+.mainArrow .next {
+  right: 0px;
+}
+.mainArrow .prev:hover {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+  opacity: 1;
+}
+.mainArrow .next:hover {
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+  opacity: 1;
+}
+/* .titleSlider .slick-arrow {
+  position: absolute;
+  top: -187.5%;
+  width: 300px;
+  height: calc(100vh);
+  font-size: 0;
+  border: none;
+  opacity: 0;
+}
+
+*/
 .quarry {
   background: url(../img/quarry.jpg) no-repeat top center/cover;
 }
@@ -76,7 +111,7 @@ body {
   height: 1px;
   width: 30%;
   background: rgba(221, 221, 221, 0.25);
-  z-index: 9999;
+  z-index: 999;
 }
 .titleSlider img {
   width: 400px;
@@ -116,31 +151,6 @@ body {
 .titleSlider .slick-current img {
   filter: grayscale(0);
 }
-.titleSlider .slick-arrow {
-  position: absolute;
-  top: -187.5%;
-  width: 300px;
-  height: calc(100vh);
-  font-size: 0;
-  border: none;
-  opacity: 0;
-}
-.titleSlider .slick-prev {
-  left: 0px;
-  z-index: 997;
-}
-.titleSlider .slick-next {
-  right: 0px;
-}
-.titleSlider .slick-prev:hover {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
-  opacity: 1;
-}
-.titleSlider .slick-next:hover {
-  background: linear-gradient(to left, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
-  opacity: 1;
-}
-
 .infoWrap {
   display: none;
   position: absolute;

@@ -7,7 +7,7 @@ $(function () {
   });
   $(".titleSlider").slick({
     asNavFor: ".slider",
-    arrows: true,
+    arrows: false,
     slidesToShow: 1,
     centerMode: true,
     centerPadding: "25%",
@@ -36,6 +36,13 @@ $(function () {
   $(".title img").on("click", function () {
     $(".infoWrap").addClass("on");
     $(".info").eq(num).addClass("on");
+  });
+
+  $(".mainArrow .prev").on("click", function () {
+    $(".titleSlider").slick("slickPrev");
+  });
+  $(".mainArrow .next").on("click", function () {
+    $(".titleSlider").slick("slickNext");
   });
 
   $(".infoSlideBtn .prev").on("click", function () {
