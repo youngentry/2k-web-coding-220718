@@ -334,15 +334,15 @@
      */
 
   /* 
-    .promotion;;
-     */
+     .promotion;;
+      */
   .promotion {
     position: relative;
     display: flex;
     justify-content: center;
   }
   .promotion .container {
-    width: 1230px;
+    width: 100%;
   }
   .promotion .head {
     text-align: center;
@@ -355,26 +355,22 @@
   .promotion h2 {
     display: flex;
     font-family: "Oswald", sans-serif;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
   }
-  .promotion h2 p {
+  .promotion h2 {
     margin-right: 10px;
   }
-  .promotion .head img {
-    width: 30px;
-  }
-
   .promotion .sale {
     display: inline-block;
-    padding: 1px 10px 3px 10px;
-    font-size: 15px;
-    font-weight: 300;
+    padding: 2px 10px 4px 10px;
+    font-size: 17px;
     text-transform: uppercase;
     background: #e61f27;
     border-radius: 20px;
+    margin-bottom: 3px;
   }
   .promotionSlider {
     margin-bottom: 120px;
@@ -383,10 +379,10 @@
     transition: 0.2s;
   }
   .promotion .content:hover img {
-    transform: scale(1);
+    transform: scale(1.05);
   }
   .promotion .content span {
-    font-size: 17px;
+    font-size: 19px;
   }
   .promotion .content:hover span {
     text-decoration: underline;
@@ -395,25 +391,26 @@
     padding: 15px 15px 5px 15px;
   }
   .promotion .content figure img {
-    padding: 0 50px;
     border-radius: 10px;
   }
   .promotion .txt {
+    font-size: 21px;
     font-weight: 300;
-    margin-left: 65px;
+    margin-left: 15px;
     text-transform: uppercase;
   }
   .promotion .txt a {
     display: inline-block;
+    margin-bottom: 5px;
   }
   .promotion .price {
     display: flex;
   }
   .promotion .txt span {
     display: inline-block;
-    margin-bottom: 5px;
     font-size: 19px;
     font-weight: 300;
+    margin-bottom: 5px;
   }
   .promotion .price p:nth-child(1) {
     margin-right: 5px;
@@ -425,7 +422,7 @@
   }
   .promotion .price p:nth-child(2) {
     padding: 0 4px 0 1px;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     text-decoration: line-through;
     color: rgb(163, 163, 163);
@@ -437,13 +434,13 @@
   .promotion .slick-arrow {
     position: absolute;
     top: 45%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     font-size: 0;
     background: none;
     border: none;
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
+    border-top: 2px solid #ddd;
+    border-left: 2px solid #ddd;
     z-index: 999;
   }
   .promotion .slick-arrow:hover {
@@ -451,17 +448,16 @@
     border-left: 2px solid #fff;
   }
   .promotion .slick-prev {
-    left: 400px;
+    left: 46px;
     transform: translateY(-50%) rotate(-45deg);
   }
   .promotion .slick-next {
-    right: 400px;
+    right: 46px;
     transform: translateY(-50%) rotate(135deg);
   }
   /* 
     .promotion;;
      */
-
   /* 
     .category;;
      */

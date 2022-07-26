@@ -95,7 +95,7 @@ $(function () {
       $(".promotionSlider").slick({
         arrows: true,
         centerMode: true,
-        centerPadding: "30%",
+        centerPadding: "10%",
         slidesToShow: 1,
         swipeToSlide: true,
       });
