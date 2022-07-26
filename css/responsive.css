@@ -13,7 +13,9 @@
     position: fixed;
     top: 0;
     width: 100%;
-    line-height: 100px;
+    line-height: 80px;
+    background: rgba(255, 255, 255, 0.105);
+    backdrop-filter: blur(3px);
     z-index: 999;
   }
 
@@ -21,7 +23,7 @@
     height: 50px;
   }
   .header .gnb {
-    margin: 0 30px;
+    margin: 0 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -43,7 +45,7 @@
   .mainBg {
     position: relative;
     height: 100vh;
-    margin-bottom: 150px;
+    margin-bottom: 60px;
   }
   .mainArrow .prev,
   .mainArrow .next {
@@ -455,23 +457,22 @@
     display: flex;
     justify-content: center;
     padding: 0 10px;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
   .category .tab {
-    position: sticky;
-    top: 0;
+    position: static;
     display: flex;
     justify-content: center;
-    padding: 10px 0;
+    padding: 0;
     gap: 10px;
     background: #111;
-    box-shadow: 0px 3px 3px -2px #000;
+    box-shadow: none;
     z-index: 999;
   }
   .category .tab div {
     font-family: "Oswald", sans-serif;
     position: relative;
-    padding: 15px 0px 17px 0;
+    padding: 6px 0px 8px 0;
     text-align: center;
     font-size: 19px;
     font-weight: 300;
@@ -541,7 +542,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .genre .gameList img {
     filter: brightness(0.8);
@@ -571,7 +572,7 @@
     position: absolute;
     bottom: 8%;
     left: 8%;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 400;
     color: #fff;
     z-index: 998;
@@ -635,7 +636,7 @@
     font-family: "Oswald", sans-serif;
     display: flex;
     justify-content: center;
-    padding: 0px 10px 40px 10px;
+    padding: 0px 10px 60px 10px;
   }
   .footer .container {
     display: flex;
@@ -646,16 +647,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   .footer form p {
     font-size: 21px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-weight: 400;
   }
   .footer form input {
     padding: 5px 20px 5px 20px;
-    width: 30%;
+    width: 50%;
     color: #fff;
     border-radius: 20px;
     border: 1px solid #fff;
@@ -664,25 +665,25 @@
   .footer form::before {
     content: "";
     position: absolute;
-    top: 47px;
+    top: 57px;
     left: 0;
     height: 1px;
-    width: 30%;
+    width: 23%;
     background: #fff;
   }
   .footer form::after {
     content: "";
     position: absolute;
-    top: 47px;
+    top: 57px;
     right: 0;
     height: 1px;
-    width: 30%;
+    width: 23%;
     background: #fff;
   }
   .footer .emailBtn {
     position: absolute;
     bottom: 6px;
-    right: 36%;
+    right: 27%;
     color: #ddd;
     border: none;
     background: none;
@@ -700,7 +701,11 @@
     text-decoration: underline;
   }
   .footer .left {
-    font-size: 17px;
+    font-size: 15px;
+    flex: 1;
+  }
+  .footer .right {
+    font-size: 15px;
     flex: 1;
   }
   .footer .sns {
@@ -709,34 +714,27 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    font-size: 25px;
-    gap: 18px;
+    font-size: 20px;
+    gap: 15px;
   }
   .footer .sns::after {
     content: "";
     position: absolute;
     bottom: -50px;
     width: 1px;
-    height: 40px;
+    height: 50px;
     background: #fff;
-  }
-  .footer .right {
-    font-size: 17px;
-    flex: 1;
   }
   .footer .support {
     display: flex;
     margin: 0 auto;
     width: 75%;
-    font-size: 19px;
+    font-size: 17px;
     font-weight: 300;
     color: #000;
     border-radius: 3px;
     background: #fff;
-    margin-bottom: 40px;
-  }
-  .footer .twitterBox {
-    padding: 15px;
+    margin-bottom: 20px;
   }
   .footer .support strong {
     display: block;
@@ -750,22 +748,22 @@
   }
   .footer .support p {
     font-family: "Noto Sans KR";
-    font-size: 17px;
+    font-size: 13px;
     line-height: 1.4em;
   }
   .footer .priv {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
   .footer .priv ul {
     display: flex;
     flex-direction: column;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 100;
     letter-spacing: 1px;
     color: #fff;
-    gap: 7px;
+    gap: 10px;
   }
   .footer .priv ul li {
     position: relative;
@@ -784,7 +782,7 @@
   }
   .footer .copyright {
     font-family: "Noto Sans KR";
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 100;
     text-align: center;
     color: rgb(162, 162, 162);

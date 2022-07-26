@@ -15,22 +15,25 @@ body {
   line-height: 100px;
   z-index: 999;
 }
-
+.header:hover {
+  background: rgba(255, 255, 255, 0.105);
+  backdrop-filter: blur(3px);
+}
 .header h1 img {
   height: 67px;
+  margin-bottom: 4px;
 }
 .header .gnb {
-  margin: 0 30px;
+  margin: auto 30px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-}
-.header .gnb ul {
-  display: flex;
 }
 .header .burger i {
   vertical-align: middle;
   font-size: 40px;
   color: white;
+  margin-bottom: 4px;
 }
 /* 
 .header;;
@@ -471,7 +474,7 @@ body {
   top: 0;
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 15px 0 30px 0;
   gap: 30px;
   background: #111;
   box-shadow: 0px 3px 3px -2px #000;
@@ -512,16 +515,11 @@ body {
   font-family: xeicon !important;
   position: absolute;
   bottom: -10px;
-  transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-150%);
   width: 10px;
   height: 10px;
   color: #111;
-}
-.category .tab div:nth-child(1)::after {
-  left: 47%;
-}
-.category .tab div:nth-child(3)::after {
-  right: 47%;
 }
 .category .tab div.on::after {
   color: #fff;
@@ -660,7 +658,7 @@ body {
 }
 .footer form p {
   font-size: 21px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   font-weight: 400;
 }
 .footer form input {
@@ -674,7 +672,7 @@ body {
 .footer form::before {
   content: "";
   position: absolute;
-  top: 47px;
+  top: 52px;
   left: 0;
   height: 1px;
   width: 30%;
@@ -683,7 +681,7 @@ body {
 .footer form::after {
   content: "";
   position: absolute;
-  top: 47px;
+  top: 52px;
   right: 0;
   height: 1px;
   width: 30%;
