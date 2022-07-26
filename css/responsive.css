@@ -55,14 +55,31 @@
   }
   .mainArrow .prev,
   .mainArrow .next {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     width: 150px;
     height: 100vh;
     font-size: 0;
-    opacity: 0;
+    opacity: 1;
     z-index: 998;
+    background: transparent;
+  }
+  .mainArrow .prev::after,
+  .mainArrow .next::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 100px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  .mainArrow .prev::after {
+    transform: translateX(50%) rotate(-135deg);
+  }
+  .mainArrow .next::after {
+    transform: translateX(0) rotate(45deg);
   }
   .mainArrow .prev {
     left: 0px;
@@ -71,11 +88,11 @@
     right: 0px;
   }
   .mainArrow .prev:hover {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+    background: transparent;
     opacity: 1;
   }
   .mainArrow .next:hover {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0.125), rgba(255, 255, 255, 0));
+    background: transparent;
     opacity: 1;
   }
 
@@ -89,7 +106,7 @@
     background: url(../img/midnight_main.jpg) no-repeat bottom center/cover;
   }
   .wwe {
-    background: url(../img/wwe-thumb-1920-1216705.png) no-repeat right center/cover;
+    background: url(../img/nab_main.jpg) no-repeat bottom center/cover;
   }
   .titleSlider {
     position: absolute;
