@@ -70,6 +70,7 @@ $(function () {
     arrows: true,
     slidesToShow: 3,
     swipeToSlide: true,
+    focusOnSelect: true,
   });
   // .promotion;;
 
@@ -80,4 +81,74 @@ $(function () {
     $(".genre").eq(idx).addClass("on").siblings().removeClass("on");
   });
   // .category;;
+
+  // 반응형
+  var screenWidth = $(window).width();
+  var scrWLow = screenWidth < 769;
+
+  function promoSlideResponsive() {
+    var screenWidth = $(window).width();
+    var scrWLow = screenWidth < 769;
+    // promo 슬릭을 centerMode로 전환합니다.
+    if (scrWLow) {
+      $(".promotionSlider").slick("unslick");
+      $(".promotionSlider").slick({
+        arrows: true,
+        centerMode: true,
+        centerPadding: "30%",
+        slidesToShow: 1,
+        swipeToSlide: true,
+      });
+    } else {
+      $(".promotionSlider").slick("unslick");
+      $(".promotionSlider").slick({
+        arrows: true,
+        slidesToShow: 3,
+        swipeToSlide: true,
+        focusOnSelect: true,
+      });
+    }
+  }
+  promoSlideResponsive();
+
+  var header = $(".header");
+  var category = $(".category");
+  var footer = $(".footer");
+  var categoryTab = $(".category .tab");
+  function categoryTopEvent() {
+    // header를 감추면 category tab을 나타나게하고, category tab을 감추면 header를 나타나게 합니다.
+    var screenWidth = $(window).width();
+    if (scrWLow && header.offset().top > category.offset().top) {
+      header.addClass("on");
+    } else if (scrWLow && header.offset().top < category.offset().top) {
+      header.removeClass("on");
+    }
+    if (scrWLow && header.offset().top > footer.offset().top - 400) {
+      categoryTab.addClass("on");
+    } else if (scrWLow && header.offset().top < footer.offset().top - 400) {
+      categoryTab.removeClass("on");
+    }
+  }
+  categoryTopEvent();
+  $(window).on("scroll", function () {
+    categoryTopEvent();
+    if (scrWLow && header.offset().top > footer.offset().top - 400) {
+      header.removeClass("on");
+    }
+  });
+  categoryTopEvent();
+
+  $(window).on("resize", function () {
+    if (screenWidth >= 769) {
+      console.log(screenWidth + ">");
+    }
+    if (scrWLow) {
+      promoSlideResponsive();
+      console.log($(window).scrollTop());
+      console.log(header.offset().top, "1");
+      categoryTopEvent();
+    }
+  });
+
+  // 반응형
 });
