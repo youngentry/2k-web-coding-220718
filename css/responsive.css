@@ -734,7 +734,7 @@
     color: #000;
     border-radius: 3px;
     background: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .footer .support strong {
     display: block;
@@ -754,25 +754,37 @@
   .footer .priv {
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .footer .priv ul {
+    position: relative;
     display: flex;
     flex-direction: column;
     font-size: 11px;
     font-weight: 100;
-    letter-spacing: 1px;
     color: #fff;
-    gap: 10px;
+    gap: 5px;
+  }
+  .footer .priv ul::before {
+    content: "information";
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 3px;
+    text-transform: uppercase;
   }
   .footer .priv ul li {
     position: relative;
+    text-align: center;
+    color: #ddd;
   }
   .footer .priv ul li:hover {
     text-decoration: underline;
+    color: #fff;
   }
   .footer .priv ul li::before {
     content: "";
+    display: none;
     position: absolute;
     top: 14%;
     left: -11px;
