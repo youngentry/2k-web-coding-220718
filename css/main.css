@@ -349,22 +349,21 @@ body {
 .promotion .head {
   margin-left: 15px;
 }
+.promotion .head div {
+  display: flex;
+  align-items: center;
+}
 .promotion h2 {
   display: flex;
   font-family: "Oswald", sans-serif;
   font-size: 44px;
   font-weight: 300;
   color: #fff;
-  padding-bottom: 10px;
   text-transform: uppercase;
 }
-.promotion h2 p {
+.promotion h2 {
   margin-right: 10px;
 }
-.promotion h2 figure img {
-  vertical-align: 0%;
-}
-
 .promotion .sale {
   display: inline-block;
   padding: 4px 10px 6px 10px;
