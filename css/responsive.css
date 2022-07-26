@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
   * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
   }
   body {
     background: #111;
@@ -717,9 +717,12 @@
     width: 85%;
     font-size: 17px;
     font-weight: 300;
-    color: #000;
+    color: #fff;
     border-radius: 3px;
-    background: #fff;
+    /* background: #fff; */
+    background: #111;
+    border: 1px solid #fff;
+
     margin-bottom: 30px;
   }
   .footer .support strong {

@@ -123,16 +123,16 @@ $(function () {
     } else if (scrWLow && header.offset().top < category.offset().top) {
       header.removeClass("on");
     }
-    if (scrWLow && header.offset().top > footer.offset().top - 400) {
+    if (scrWLow && header.offset().top > footer.offset().top - 800) {
       categoryTab.addClass("on");
-    } else if (scrWLow && header.offset().top < footer.offset().top - 400) {
+    } else if (scrWLow && header.offset().top < footer.offset().top - 800) {
       categoryTab.removeClass("on");
     }
   }
   categoryTopEvent();
   $(window).on("scroll", function () {
     categoryTopEvent();
-    if (scrWLow && header.offset().top > footer.offset().top - 400) {
+    if (scrWLow && header.offset().top > footer.offset().top - 800) {
       header.removeClass("on");
     }
   });
