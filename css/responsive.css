@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px) {
+  * {
+    outline: 1px solid red;
+  }
   body {
     background: #111;
     color: #fff;
@@ -177,7 +180,7 @@
   }
   .description .closeBtn {
     position: absolute;
-    top: -85px;
+    top: -30px;
     left: 45%;
   }
   .description .closeBtn i {
@@ -231,7 +234,7 @@
   }
   .description strong {
     display: block;
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 15px;
