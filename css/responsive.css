@@ -72,14 +72,22 @@
     top: 50%;
     width: 100px;
     height: 100px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
   }
   .mainArrow .prev::after {
     transform: translateX(50%) rotate(-135deg);
   }
   .mainArrow .next::after {
     transform: translateX(0) rotate(45deg);
+  }
+  .mainArrow .prev:hover::after {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+  }
+  .mainArrow .next:hover::after {
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
   }
   .mainArrow .prev {
     left: 0px;
@@ -125,7 +133,7 @@
     left: -15%;
     height: 1px;
     width: 30%;
-    background: rgba(221, 221, 221, 0.25);
+    background: transparent;
     z-index: 999;
   }
   .titleSlider img {
