@@ -511,7 +511,7 @@
     margin-bottom: 60px;
   }
   .category .tab {
-    position: sticky;
+    position: static;
     top: 0;
     display: flex;
     justify-content: center;
