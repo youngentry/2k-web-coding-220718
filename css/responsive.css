@@ -1,7 +1,4 @@
 @media screen and (max-width: 768px) {
-  * {
-    /* outline: 1px solid red; */
-  }
   body {
     background: #111;
     color: #fff;
@@ -27,6 +24,7 @@
   }
   .header h1 img {
     height: 50px;
+    margin-bottom: 0px;
   }
   .header .gnb {
     margin: 0 10px;
