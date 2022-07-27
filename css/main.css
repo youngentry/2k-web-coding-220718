@@ -1,7 +1,10 @@
+.Wrap {
+  overflow-x: hidden;
+}
+
 body {
   background: #111;
   color: #fff;
-  overflow-x: hidden;
 }
 .container {
   width: 1200px;
