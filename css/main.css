@@ -1,6 +1,7 @@
 body {
   background: #111;
   color: #fff;
+  overflow: hidden;
 }
 .container {
   width: 1200px;
@@ -217,11 +218,11 @@ body {
   z-index: 999;
 }
 .infoSlideBtn .prev {
-  left: -550px;
+  left: -528px;
   transform: translateY(-50%) translateX(-50%) rotate(-45deg);
 }
 .infoSlideBtn .next {
-  left: 550px;
+  left: 528px;
   transform: translateY(-50%) translateX(-50%) rotate(135deg);
 }
 .infoSlideBtn .prev:hover,
