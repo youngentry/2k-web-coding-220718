@@ -58,20 +58,31 @@
     display: block;
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 120px;
     height: 100vh;
     font-size: 0;
     opacity: 1;
     z-index: 998;
     background: transparent;
   }
+  .mainArrow .prev::before,
+  .mainArrow .next::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+  }
+  .mainArrow .next::before {
+    transform: translateX(-40px);
+  }
   .mainArrow .prev::after,
   .mainArrow .next::after {
     content: "";
     position: absolute;
-    top: 50%;
-    width: 100px;
-    height: 100px;
+    top: 80%;
+    width: 50px;
+    height: 50px;
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
   }
@@ -93,7 +104,7 @@
     left: 0px;
   }
   .mainArrow .next {
-    right: 0px;
+    right: -45px;
   }
   .mainArrow .prev:hover {
     background: transparent;
@@ -118,7 +129,7 @@
   }
   .titleSlider {
     position: absolute;
-    top: 15%;
+    top: 50%;
     left: 0%;
     width: 100%;
   }
