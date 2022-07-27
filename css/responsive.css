@@ -235,7 +235,7 @@
   }
   .description .closeBtn i:hover {
     transform: rotate(0deg);
-    background: rgba(255, 255, 255, 0.327);
+    background: rgba(255, 255, 255, 0.2);
   }
   /* 22.07.24 description move btn */
   .infoSlideBtn {

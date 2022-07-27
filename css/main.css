@@ -201,7 +201,7 @@ body {
   transition: 0.2s;
 }
 .description .closeBtn i:hover {
-  transform: rotate(10deg) scale(1.4);
+  transform: scale(1.4);
 }
 /* 22.07.24 description move btn */
 .infoSlideBtn {
