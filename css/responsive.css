@@ -581,13 +581,11 @@
     color: #fff;
   }
   .category .tab .shooter {
-    background: url(../img/wall01.png) no-repeat center center/cover;
+    border: 1px solid #e61f27;
   }
   .category .tab .sports {
-    background: url(../img/wall02.png) no-repeat center center/cover;
   }
   .category .tab .strategy {
-    background: url(../img/paint01.png) no-repeat center center/cover;
   }
   .genre {
     display: none;
