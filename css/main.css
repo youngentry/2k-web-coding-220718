@@ -52,9 +52,9 @@ body {
   position: absolute;
   top: 0;
   left: -100%;
-  padding: 100px 0px 0px 30px;
+  padding: 100px 20px 0px 20px;
   height: 100vh;
-  width: 90%;
+  width: 85%;
   background: rgba(0, 0, 0, 1);
   transition: 0.5s;
   z-index: 999;
@@ -64,13 +64,61 @@ body {
 }
 .header .topTitle {
   display: flex;
+  padding-top: 30px;
 }
-.header .bottomSlide {
-  display: flex;
+.header .topTitle li {
+  flex: 1;
+  padding-right: 10px;
 }
 .header .sTitle {
   display: flex;
   flex-direction: column;
+}
+.header .sTitle:hover p {
+  transition: 0.2s;
+}
+.header .sTitle:hover p {
+  color: #e61f27;
+}
+.header .topTitle p {
+  font-family: "Oswald", sans-serif;
+  font-size: 21px;
+  padding-bottom: 6px;
+}
+.header .topTitle ul {
+  padding-bottom: 30px;
+}
+.header .topTitle a {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 2;
+  letter-spacing: -0.025em;
+}
+.header .topTitle a:hover {
+  text-decoration: underline;
+}
+.header .bottomSlide {
+  position: absolute;
+  bottom: 20px;
+  padding-right: 40px;
+  display: flex;
+  width: 100%;
+}
+.header .bottomSlide p {
+  font-family: "Oswald", sans-serif;
+  opacity: 0;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.header .bottomSlide li:hover {
+  cursor: pointer;
+}
+.header .bottomSlide li:hover p {
+  opacity: 1;
 }
 /* 
 .header;;
@@ -480,7 +528,7 @@ body {
   border: none;
   border-top: 1px solid #ddd;
   border-left: 1px solid #ddd;
-  z-index: 999;
+  z-index: 998;
 }
 .promotion .slick-arrow:hover {
   border-top: 2px solid #fff;

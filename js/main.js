@@ -4,6 +4,17 @@ $(function () {
     $(".menu").toggleClass("on");
   });
 
+  $(".bottomSlide").slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 4000,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    slidesToShow: 8,
+    cssEase: "linear",
+  });
+
   // .mainVisual;;
   $(".slider").slick({
     arrows: false,
