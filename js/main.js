@@ -1,4 +1,9 @@
 $(function () {
+  $(".header .burger").on("click", function (e) {
+    e.preventDefault();
+    $(".menu").toggleClass("on");
+  });
+
   // .mainVisual;;
   $(".slider").slick({
     arrows: false,
