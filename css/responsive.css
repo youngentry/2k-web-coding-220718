@@ -61,7 +61,7 @@
     flex-direction: column;
     padding-top: 0px;
     font-family: "Oswald", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
   }
   .header .topTitle:first-of-type {
     padding-top: 15px;
@@ -81,7 +81,7 @@
     display: block;
   }
   .header .sTitle li:first-of-type {
-    padding-top: 0px;
+    padding-top: 2px;
   }
   .header .sTitle li:last-of-type {
     padding-bottom: 5px;
@@ -95,7 +95,7 @@
   .header .topTitle a {
     position: relative;
     padding-left: 13px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 1;
   }
