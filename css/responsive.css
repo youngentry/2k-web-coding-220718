@@ -686,7 +686,6 @@
   }
   .category .tab {
     position: static;
-    top: 0;
     display: flex;
     padding-bottom: 0px;
     justify-content: center;
@@ -695,7 +694,6 @@
     backdrop-filter: blur(4px);
     box-shadow: none;
     transition: 0.2s;
-    z-index: 999;
   }
   .category .tab.on {
     top: -70px;
