@@ -1,4 +1,6 @@
 $(function () {
+  // .header;;
+
   $(".header .burger").on("click", function (e) {
     e.preventDefault();
     $(".menu").toggleClass("on");
@@ -13,7 +15,24 @@ $(function () {
     pauseOnHover: false,
     slidesToShow: 8,
     cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 769,
+        settings: {
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 0,
+          speed: 4000,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          slidesToShow: 3,
+          cssEase: "linear",
+        },
+      },
+    ],
   });
+
+  // .header;;
 
   // .mainVisual;;
   $(".slider").slick({
@@ -101,6 +120,19 @@ $(function () {
   // 반응형
   var screenWidth = $(window).width();
   var scrWLow = screenWidth < 769;
+
+  function menuSlide() {
+    var screenWidth = $(window).width();
+    var scrWLow = screenWidth < 769;
+    if (scrWLow) {
+      console.log(scrWLow == true);
+      $(".menu ul li").on("click", function () {
+        $(this).children().toggleClass("on").parent().siblings().children().removeClass("on");
+        $(this).parent().siblings().children().children().removeClass("on");
+      });
+    }
+  }
+  menuSlide();
 
   function promoSlideResponsive() {
     var screenWidth = $(window).width();

@@ -41,6 +41,92 @@
     font-size: 30px;
     color: white;
   }
+  .header .menu {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    padding: 100px 20px 0px 20px;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  .header .menu.on {
+    left: 0;
+  }
+  .header .topTitle {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    font-family: "Oswald", sans-serif;
+    font-size: 21px;
+  }
+  .header .topTitle li {
+    flex: 1;
+    padding-right: 10px;
+  }
+  .header .sTitle {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .sTitle li {
+    display: none;
+  }
+  .header .sTitle.on li {
+    display: block;
+  }
+  .header .sTitle li:first-of-type {
+    padding-top: 7px;
+  }
+  /* .header .topTitle.on {
+    display: none;
+  } */
+  .header .topTitle ul {
+    padding-bottom: 15px;
+  }
+  .header .topTitle a {
+    position: relative;
+    padding-left: 13px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1;
+  }
+  .header .topTitle a:hover {
+    text-decoration: underline;
+  }
+  .header .topTitle a::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 1px;
+    width: 5px;
+    height: 1px;
+    background: #fff;
+  }
+  .header .bottomSlide {
+    position: absolute;
+    bottom: 0px;
+    padding-right: 40px;
+    display: flex;
+    width: 100%;
+  }
+  .header .bottomSlide p {
+    font-family: "Oswald", sans-serif;
+    opacity: 0;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 5px;
+    letter-spacing: 2px;
+    transition: 0.2s;
+  }
+  .header .bottomSlide li:hover {
+    cursor: pointer;
+  }
+  .header .bottomSlide li:hover p {
+    opacity: 1;
+  }
   /* 
     .header;;
      */

@@ -67,33 +67,34 @@ body {
 .header .topTitle {
   display: flex;
   padding-top: 30px;
+  font-family: "Oswald", sans-serif;
+  font-size: 21px;
 }
 .header .topTitle li {
   flex: 1;
   padding-right: 10px;
 }
-.header .sTitle {
-  display: flex;
-  flex-direction: column;
-}
-.header .sTitle:hover p {
-  transition: 0.2s;
-}
-.header .sTitle:hover p {
+.header .topTitle li:hover {
   color: #e61f27;
 }
-.header .topTitle p {
-  font-family: "Oswald", sans-serif;
-  font-size: 21px;
-  padding-bottom: 6px;
+.header .topTitle li:hover ul,
+.header .topTitle li:hover ul a {
+  color: #fff;
+}
+/* .header .sTitle {
+  display: flex;
+  flex-direction: column;
+} */
+.header .sTitle li:first-of-type {
+  padding-top: 5px;
 }
 .header .topTitle ul {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
 .header .topTitle a {
   font-size: 15px;
   font-weight: 300;
-  line-height: 2;
+  line-height: 1.6;
   letter-spacing: -0.025em;
 }
 .header .topTitle a:hover {
@@ -101,7 +102,7 @@ body {
 }
 .header .bottomSlide {
   position: absolute;
-  bottom: 20px;
+  bottom: 0px;
   padding-right: 40px;
   display: flex;
   width: 100%;
