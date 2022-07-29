@@ -252,8 +252,8 @@
     top: 70%;
     width: 50px;
     height: 50px;
-    border-top: 1px solid #fff;
-    border-right: 1px solid #fff;
+    /* border-top: 1px solid #fff;
+    border-right: 1px solid #fff; */
   }
   .mainArrow .prev {
     left: 0px;
@@ -267,14 +267,14 @@
   .mainArrow .next::after {
     transform: translateX(45px) rotate(45deg);
   }
-  .mainArrow .prev:hover::after {
+  /* .mainArrow .prev:hover::after {
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
   }
   .mainArrow .next:hover::after {
     border-top: 2px solid #fff;
     border-right: 2px solid #fff;
-  }
+  } */
 
   .mainArrow .prev:hover {
     background: transparent;
