@@ -726,7 +726,7 @@ body {
   font-size: 30px;
   font-weight: 400;
   color: #fff;
-  z-index: 998;
+  z-index: 997;
 }
 .genre li::after {
   content: "";
