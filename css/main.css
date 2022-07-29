@@ -176,7 +176,7 @@ body {
   left: 50%;
   font-size: 30px;
   transform: translateX(-50%);
-  color: #ddd;
+  color: rgb(156, 156, 156);
   z-index: 999;
   animation: scrollDown 1s infinite;
 }
