@@ -1,17 +1,6 @@
 $(function () {
   // .header;;
 
-  $(".header .burger").on("click", function (e) {
-    e.preventDefault();
-    $(".menu").toggleClass("on");
-  });
-
-  $(".header .search").on("click", function (e) {
-    e.preventDefault();
-    $(".header form").toggleClass("on");
-    $(".header input").toggleClass("on");
-  });
-
   $(".bottomSlide").slick({
     arrows: false,
     autoplay: true,
@@ -27,6 +16,17 @@ $(function () {
         settings: "unslick",
       },
     ],
+  });
+
+  $(".header .burger").on("click", function (e) {
+    e.preventDefault();
+    $(".menu").toggleClass("on");
+  });
+
+  $(".header .search").on("click", function (e) {
+    e.preventDefault();
+    $(".header form").toggleClass("on");
+    $(".header input").toggleClass("on");
   });
 
   // .header;;
@@ -182,6 +182,23 @@ $(function () {
       promoSlideResponsive();
       categoryTopEvent();
     }
+
+    $(".bottomSlide").slick({
+      arrows: false,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 4000,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      slidesToShow: 8,
+      cssEase: "linear",
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: "unslick",
+        },
+      ],
+    });
   });
 
   // 반응형
