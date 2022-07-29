@@ -133,6 +133,9 @@ body {
 .header .topTitle a:hover {
   text-decoration: underline;
 }
+.header .menuInfo {
+  display: none;
+}
 .header .bottomSlide {
   position: absolute;
   bottom: 0px;

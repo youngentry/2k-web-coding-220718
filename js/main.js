@@ -24,16 +24,7 @@ $(function () {
     responsive: [
       {
         breakpoint: 769,
-        settings: {
-          arrows: false,
-          autoplay: true,
-          autoplaySpeed: 0,
-          speed: 4000,
-          pauseOnFocus: false,
-          pauseOnHover: false,
-          slidesToShow: 3,
-          cssEase: "linear",
-        },
+        settings: "unslick",
       },
     ],
   });
@@ -127,31 +118,15 @@ $(function () {
   var screenWidth = $(window).width();
   var scrWLow = screenWidth < 769;
 
-  function menuSlide() {
-    console.log(scrWLow == true);
-    $(".menu ul li").on("click", function () {
-      $(this).children().toggleClass("on").parent().siblings().children().removeClass("on");
-      $(this).parent().siblings().children().children().removeClass("on");
-    });
-    $(window).on("resize", function () {
-      var screenWidth = $(window).width();
-      var scrWLow = screenWidth < 769;
-      if (scrWLow) {
-        console.log(scrWLow == true);
-        $(".menu ul li").on("click", function () {
-          $(this).children().toggleClass("on").parent().siblings().children().removeClass("on");
-          $(this).parent().siblings().children().children().removeClass("on");
-        });
-      }
-    });
-  }
-  menuSlide();
+  $(".menu ul li").on("click", function () {
+    $(this).children().toggleClass("on").parent().siblings().children().removeClass("on");
+    $(this).parent().siblings().children().children().removeClass("on");
+  });
 
   function promoSlideResponsive() {
     var screenWidth = $(window).width();
-    var scrWLow = screenWidth < 769;
     // promo 슬릭을 centerMode로 전환합니다.
-    if (scrWLow) {
+    if (screenWidth < 769) {
       $(".promotionSlider").slick("unslick");
       $(".promotionSlider").slick({
         arrows: true,
@@ -205,8 +180,6 @@ $(function () {
     }
     if (scrWLow) {
       promoSlideResponsive();
-      console.log($(window).scrollTop());
-      console.log(header.offset().top, "1");
       categoryTopEvent();
     }
   });

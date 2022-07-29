@@ -45,7 +45,7 @@
     position: absolute;
     top: 0;
     left: -100%;
-    padding: 100px 20px 0px 20px;
+    padding: 80px 20px 0px 20px;
     height: 100vh;
     width: 100%;
     background: rgba(0, 0, 0, 0.85);
@@ -60,7 +60,7 @@
     flex-direction: column;
     padding-top: 0px;
     font-family: "Oswald", sans-serif;
-    font-size: 21px;
+    font-size: 25px;
   }
   .header .topTitle li {
     flex: 1;
@@ -77,18 +77,21 @@
     display: block;
   }
   .header .sTitle li:first-of-type {
-    padding-top: 7px;
+    padding-top: 0px;
+  }
+  .header .sTitle li:last-of-type {
   }
   /* .header .topTitle.on {
     display: none;
   } */
   .header .topTitle ul {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .header .topTitle a {
     position: relative;
     padding-left: 13px;
-    font-weight: 100;
+    font-size: 15px;
+    font-weight: 300;
     line-height: 1;
   }
   .header .topTitle a:hover {
@@ -103,12 +106,52 @@
     height: 1px;
     background: #fff;
   }
+  .header .menuInfo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: 10%;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.8;
+    letter-spacing: 2px;
+  }
+  .header .menuInfo a:hover {
+    text-decoration: underline;
+  }
+  .header .menuInfo::before {
+    content: "";
+    width: 150%;
+    height: 1px;
+    margin-bottom: 20px;
+    background: #ddd;
+  }
+  .header .login {
+    padding-top: 10px;
+    gap: 10px;
+  }
+  .header .login a {
+    font-size: 13px;
+    font-weight: 100;
+    padding: 0px 20px 3px 20px;
+    border: 1px solid #fff;
+    margin-right: 3px;
+    letter-spacing: 0px;
+  }
+  .header .login a:hover {
+    background: #fff;
+    color: #000;
+  }
   .header .bottomSlide {
     position: absolute;
     bottom: 0px;
     padding-right: 40px;
     display: flex;
     width: 100%;
+  }
+  .header .bottomSlide img {
+    display: none;
   }
   .header .bottomSlide p {
     font-family: "Oswald", sans-serif;
@@ -125,6 +168,39 @@
   }
   .header .bottomSlide li:hover p {
     opacity: 1;
+  }
+  .header .btn form {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    right: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    transition: 0.5s;
+  }
+  .header .btn form.on {
+    opacity: 1;
+  }
+  .header .btn form > input {
+    opacity: 0;
+    width: 0px;
+    color: white;
+    background: none;
+    border: none;
+    margin-bottom: 1px;
+    transition: 0.5s;
+  }
+  .header .btn form.on > input {
+    opacity: 1;
+    font-size: 13px;
+    width: 130px;
+  }
+  .header .btn button {
+    background: none;
+    cursor: pointer;
   }
   .header .btn button {
     border: none;
