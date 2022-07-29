@@ -39,7 +39,7 @@
   .header .burger i {
     vertical-align: middle;
     font-size: 30px;
-    color: white;
+    color: #fff;
   }
   .header .menu {
     position: absolute;
@@ -125,6 +125,9 @@
   }
   .header .bottomSlide li:hover p {
     opacity: 1;
+  }
+  .header .btn button {
+    border: none;
   }
   /* 
     .header;;

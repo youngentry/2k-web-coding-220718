@@ -38,6 +38,39 @@ body {
   margin-right: 20px;
   z-index: 999;
 }
+.header .btn form {
+  position: absolute;
+  display: flex;
+  opacity: 0;
+  right: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px 5px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+.header .btn form.on {
+  opacity: 1;
+}
+.header .btn form > input {
+  opacity: 0;
+  width: 0px;
+  color: white;
+  background: none;
+  border: none;
+  margin-bottom: 1px;
+  transition: 0.5s;
+}
+.header .btn form.on > input {
+  opacity: 1;
+  width: 200px;
+}
+.header .btn button {
+  background: none;
+  cursor: pointer;
+}
+
 .header .btn i {
   vertical-align: middle;
   color: white;
