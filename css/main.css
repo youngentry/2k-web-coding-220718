@@ -560,10 +560,9 @@ body {
 .category .tab {
   display: flex;
   justify-content: center;
-  padding: 15px 0 30px 0;
+  padding: 15px 0 0px 0;
   gap: 30px;
   background: #111;
-  box-shadow: 0px 3px 3px -2px #000;
   z-index: 999;
 }
 .category .tab div {
@@ -575,7 +574,6 @@ body {
   font-weight: 300;
   color: #ddd;
   border: 1px solid #111;
-
   filter: brightness(0.55);
   transition: 0.3s;
   text-transform: uppercase;
