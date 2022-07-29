@@ -177,7 +177,7 @@ body {
   font-size: 30px;
   transform: translateX(-50%);
   color: rgb(156, 156, 156);
-  z-index: 999;
+  z-index: 998;
   animation: scrollDown 1s infinite;
 }
 @keyframes scrollDown {
