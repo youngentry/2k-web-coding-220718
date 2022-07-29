@@ -527,7 +527,7 @@ body {
   transition: 0.2s;
 }
 .promotion .content:hover img {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 .promotion .content span {
   font-size: 19px;
