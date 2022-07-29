@@ -23,7 +23,8 @@
   }
   .header h1 {
     line-height: 70px;
-    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 20px;
   }
   .header h1 img {
     height: 50px;
@@ -45,10 +46,10 @@
     position: absolute;
     top: 0;
     left: -100%;
-    padding: 80px 20px 0px 20px;
+    padding: 80px 10px 0px 20px;
     height: 100vh;
     width: 100%;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.95);
     transition: 0.5s;
     z-index: 999;
   }
@@ -58,7 +59,7 @@
   .header .topTitle {
     display: flex;
     flex-direction: column;
-    padding-top: 0px;
+    padding-top: 15px;
     font-family: "Oswald", sans-serif;
     font-size: 25px;
   }
@@ -585,7 +586,7 @@
     margin-bottom: 3px;
   }
   .promotionSlider {
-    margin-bottom: 120px;
+    margin-bottom: 100px;
   }
   .promotion .content img {
     transition: 0.2s;
@@ -600,7 +601,7 @@
     text-decoration: underline;
   }
   .promotion .content figure {
-    padding: 15px 15px 5px 15px;
+    padding: 15px 20px 5px 20px;
   }
   .promotion .content figure img {
     border-radius: 10px;
@@ -676,13 +677,14 @@
   .category {
     display: flex;
     justify-content: center;
-    padding: 0 10px;
+    padding: 0 20px;
     margin-bottom: 60px;
   }
   .category .tab {
     position: static;
     top: 0;
     display: flex;
+    padding-bottom: 0px;
     justify-content: center;
     gap: 10px;
     background: rgba(17, 17, 17, 0.1);
