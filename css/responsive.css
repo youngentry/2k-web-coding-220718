@@ -84,7 +84,7 @@
     padding-top: 2px;
   }
   .header .sTitle li:last-of-type {
-    padding-bottom: 5px;
+    padding-bottom: 0px;
   }
   /* .header .topTitle.on {
     display: none;
