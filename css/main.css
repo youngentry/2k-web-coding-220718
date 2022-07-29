@@ -159,6 +159,7 @@ body {
 .header .bottomSlide li:hover p {
   opacity: 1;
 }
+
 /* 
 .header;;
  */
@@ -166,6 +167,27 @@ body {
 /* 
 .mainVisual;;
  */
+.mainVisual {
+  position: relative;
+}
+.mainVisual .scrollDown {
+  position: absolute;
+  bottom: 170px;
+  left: 50%;
+  font-size: 30px;
+  transform: translateX(-50%);
+  color: #ddd;
+  z-index: 999;
+  animation: scrollDown 1s infinite;
+}
+@keyframes scrollDown {
+  0% {
+    bottom: 170px;
+  }
+  100% {
+    bottom: 150px;
+  }
+}
 .mainBg {
   position: relative;
   height: 100vh;
