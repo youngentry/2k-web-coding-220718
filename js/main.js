@@ -28,15 +28,15 @@ $(function () {
     $(".header form").toggleClass("on");
     $(".header input").toggleClass("on");
   });
+  if (a > 0 || (b > 0 && c > 0))
+    // .header;;
 
-  // .header;;
-
-  // .mainVisual;;
-  $(".slider").slick({
-    arrows: false,
-    fade: true,
-    swipe: false,
-  });
+    // .mainVisual;;
+    $(".slider").slick({
+      arrows: false,
+      fade: true,
+      swipe: false,
+    });
   $(".titleSlider").slick({
     asNavFor: ".slider",
     arrows: false,
